@@ -1,0 +1,242 @@
+@media (max-width: 1366px) {
+	.header__persons {
+		max-width: 850px;
+		height: 420px;
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 65%;
+		transform: translate(-50%, -65%);
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.header__title {
+		position: absolute;
+		z-index: 2;
+		font-size: 3em;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #fff;
+		left: 0;
+		padding: 36vh 0px 0px 10%;
+		strong {
+			color: #00ffa3;
+		}
+	}
+	.header__btn a {
+		background-color: #00ffa3;
+		color: #112e42;
+		padding: 10px 30px;
+		box-shadow: 0px 6px 12px rgba(0, 255, 163, 0.19);
+		border-radius: 3px;
+		position: relative;
+		z-index: 2;
+		left: 10%;
+		top: 60vh;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 16px;
+		&:hover {
+			background-color: #00af6f;
+			transition: background-color ease 0.2s;
+			color: #fff;
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.header__persons {
+		width: 450px;
+		height: 330px;
+		// overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 65%;
+		transform: translate(-50%, -65%);
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	.header__flag {
+		width: 100% !important;
+		height: 100vh !important;
+	}
+	.header__title {
+		position: absolute;
+		z-index: 2;
+		font-size: 2.5em;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #fff;
+		left: 0;
+		padding: 36vh 0px 0px 4%;
+		strong {
+			color: #00ffa3;
+		}
+	}
+	.header__btn a {
+		background-color: #00ffa3;
+		color: #112e42;
+		padding: 10px 30px;
+		box-shadow: 0px 6px 12px rgba(0, 255, 163, 0.19);
+		border-radius: 3px;
+		position: relative;
+		z-index: 2;
+		left: 4%;
+		top: 60vh;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 16px;
+		&:hover {
+			background-color: #00af6f;
+			transition: background-color ease 0.2s;
+			color: #fff;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.header__flag {
+		width: 80% !important;
+		height: 50vh !important;
+		object-position: center;
+		object-fit: cover;
+		position: absolute;
+		top: 50% !important;
+		transform: translateY(-50%);
+		right: 0;
+	}
+	.header__title {
+		padding: 42vh 0px 0px 5%;
+		font-size: 2em;
+	}
+	.header__btn a {
+		top: 54vh;
+		left: 6%;
+	}
+	.news__cards {
+		justify-content: center;
+	}
+	.counters__cards {
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+	.about__images-one {
+		flex-direction: column;
+		align-items: start;
+		margin-left: 18px;
+		img {
+			width: 302px;
+			height: 367px;
+		}
+	}
+	.about__images-two {
+		flex-direction: column;
+		align-items: start;
+		margin-left: 18px;
+
+		img {
+			width: 302px;
+			height: 367px;
+		}
+	}
+	.useful__icons-3 {
+		width: 680px;
+	}
+}
+
+@media (max-width: 414px) {
+	.header__persons {
+		left: 51%;
+	}
+	.header__btn a {
+		top: 59vh;
+		left: 35%;
+	}
+	.header__title {
+		padding-left: 31%;
+	}
+	.news__card-main,
+	.news__card-double1,
+	.news__card-double2 {
+		min-width: 390px;
+		height: 350px;
+	}
+	.news__card-last {
+		min-width: 390px;
+		height: 500px;
+	}
+	.news__bg-title,
+	.projects__bg-title,
+	.counters__bg-title,
+	.info-slider__bg-title,
+	.about__bg-title,
+	.useful__big-title,
+	.contact__big-title,
+	.contact__title {
+		font-size: 50px;
+	}
+	.useful__icons-2 {
+		width: 350px;
+	}
+	.useful__icons-3 {
+		width: 365px;
+	}
+	.useful__icons-4 {
+		width: 360px;
+	}
+	.about__section {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.about__images {
+		margin-top: 70px;
+	}
+	.about__images-one {
+		flex-direction: column;
+		align-items: start;
+		margin-left: 0px;
+		img {
+			width: 366px;
+			height: 420px;
+		}
+	}
+	.about__images-two {
+		flex-direction: column;
+		align-items: start;
+		margin-left: 0px;
+
+		img {
+			width: 366px;
+			height: 420px;
+		}
+	}
+	.counters__card-body {
+		border-right: 0;
+	}
+	.slider__items-maintitle {
+		font-size: 30px !important;
+	}
+	.slider__items-title {
+		font-size: 25px !important;
+	}
+	.slider__items-elem {
+		display: flex;
+		justify-content: flex-start;
+		img {
+			height: 40px !important;
+			width: 40px !important;
+		}
+	}
+	.contact input {
+		width: 100%;
+	}
+}

@@ -1,0 +1,143 @@
+@mixin title {
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 120%;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	color: initial;
+	background: -webkit-linear-gradient(180deg, #8aa7f0 0%, #162b62 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: flex;
+	align-items: center;
+	margin: -30px 0px 13px 0px;
+
+	&:after {
+		content: "";
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(90deg, #5d74c5 -0.44%, rgba(93, 116, 197, 0) 100%);
+		transform: matrix(1, 0, 0, -1, 0, 0);
+		margin-left: 10px;
+	}
+	&::before {
+		content: "";
+		width: 20%;
+		height: 2px;
+		background: linear-gradient(270deg, #5d74c5 0%, rgba(93, 116, 197, 0) 100%);
+		transform: matrix(1, 0, 0, -1, 0, 0) rotate(360deg);
+		margin-right: 10px;
+	}
+}
+@mixin bigTitle {
+	white-space: nowrap;
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	color: rgba(2, 36, 82, 0.03);
+	text-align: right;
+	@media (max-width: 414px) {
+		font-size: 50px;
+	}
+}
+.opportunity {
+	margin-top: -50px;
+	&__body {
+		display: flex;
+		@media (max-width: 414px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__big-title {
+		@include bigTitle;
+	}
+	&__title {
+		@include title;
+	}
+	&__cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 26px;
+	}
+	&__card {
+		width: 250px;
+		height: 330px;
+		overflow: hidden;
+		cursor: pointer;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	&__card-body {
+		position: relative;
+		width: 250px;
+		height: 330px;
+		border-radius: 5px;
+	}
+
+	&__card-mark {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		padding: 3px 6px;
+		background-color: #fff;
+		font-weight: 500;
+		font-size: 9px;
+		line-height: 130%;
+		color: #164197;
+	}
+
+	&__card-title {
+		position: absolute;
+		left: 10px;
+		bottom: 30px;
+		font-size: 13px;
+		line-height: 23px;
+		color: #ffffff;
+		z-index: 1;
+	}
+	&__card-sloy {
+		img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+			max-height: 35%;
+		}
+	}
+}
+.leadership-id__main-names {
+	max-height: 414px;
+	max-width: 386px;
+}
+@media (max-width: 900px) {
+	.more__body {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.leadership-id__main-names {
+		margin-top: 30px;
+		max-width: 100%;
+	}
+}
+@media (max-width: 488px) {
+	.more__main-title {
+		font-size: 22px;
+	}
+}
+
+.related {
+	&__cards {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+}
